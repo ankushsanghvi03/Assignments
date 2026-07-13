@@ -7,4 +7,3 @@ for i in l:
 
 print(d)
 
-"lol"
