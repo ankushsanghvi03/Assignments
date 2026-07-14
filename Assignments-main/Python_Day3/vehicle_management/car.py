@@ -1,3 +1,5 @@
+from exception import OwnerAlreadyExsistsError
+
 class Car:
 
     def __init__(self, brand, model, year, owner=None):
@@ -18,7 +20,8 @@ class Car:
         if not self.__owner:
             self.__owner = owner
         else:
-            print(f"Owner is {self.__owner}. Cannot change owner.")
+            #print(f"Owner is {self.__owner}. Cannot change owner.")
+            raise OwnerAlreadyExsistsError(self.__owner)
     
     def get_owner(self):
         return self.__owner
