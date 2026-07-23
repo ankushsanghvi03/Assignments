@@ -1,4 +1,14 @@
-**/__pycache__/
+# Node.js
+node_modules/
 
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
 
+# VS Code
+.vscode/
 
+# Environment files
+.env
