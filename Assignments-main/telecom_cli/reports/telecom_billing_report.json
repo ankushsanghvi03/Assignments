@@ -1,0 +1,54 @@
+{
+    "generated_at": "2026-07-22T15:54:58+05:30",
+    "summary": {
+        "subscriber_count": 3,
+        "valid_cdr_count": 6,
+        "rejected_cdr_count": 1,
+        "billed_amount": 912.5,
+        "unassigned_amount": 3.0,
+        "processed_amount": 915.5,
+        "suspicious_call_count": 1
+    },
+    "subscriber_billing": {
+        "9876543210": {
+            "plan_type": "postpaid",
+            "call_count": 2,
+            "total_duration_sec": 4380,
+            "total_cost": 844.5,
+            "suspicious_call_count": 1
+        },
+        "9812345678": {
+            "plan_type": "prepaid",
+            "call_count": 2,
+            "total_duration_sec": 60,
+            "total_cost": 8.0,
+            "suspicious_call_count": 0
+        },
+        "9800011122": {
+            "plan_type": "postpaid",
+            "call_count": 1,
+            "total_duration_sec": 300,
+            "total_cost": 60.0,
+            "suspicious_call_count": 0
+        }
+    },
+    "suspicious_calls": [
+        {
+            "msisdn": "9876543210",
+            "call_type": "international",
+            "duration_sec": 4200,
+            "cost": 840.0
+        }
+    ],
+    "unknown_subscriber_cdrs": [
+        {
+            "msisdn": "9999999999",
+            "call_type": "domestic",
+            "duration_sec": 120,
+            "cost": 3.0
+        }
+    ],
+    "rejected_cdrs": [
+        "Row 8: Invalid duration_sec"
+    ]
+}
